@@ -24,11 +24,16 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                {/* <a className="btn btn-ghost text-xl"> Residential Complex</a> */}
-                <div className="bg-[#00aeff] px-4 py-2 font-bold text-2xl rounded-lg flex items-center">
+
+<div>
+    <img className="w-[39%] rounded-md" src="https://i.ibb.co/0txvr1G/image11.png" alt="" />
+</div>
+               
+          
+                {/* <div className="bg-[#00aeff] px-4 py-2 font-bold text-xl rounded-lg flex items-center">
                     <h3>Residential Complex</h3>
-                    <p></p>
-                </div>
+                </div> */}
+
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

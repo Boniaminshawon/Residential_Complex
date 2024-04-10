@@ -1,13 +1,16 @@
 import Banner from "../components/Banner";
+import Properties from "../components/Properties";
+import { useLoaderData } from "react-router-dom";
 
 
 
 const Home = () => {
+    const properties = useLoaderData();
     return (
         <div>
             <Banner></Banner>
-            This is home
-        
+            <Properties properties={properties}></Properties>
+
         </div>
     );
 };

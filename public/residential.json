@@ -1,6 +1,6 @@
 [
     {
-        "image": "estate1.jpg",
+        "image": "https://i.ibb.co/Qvtw3xg/Greenwood-Mews-Facilities-1-918x543.jpg",
         "estate_title": "Greenwood Residences",
         "id": "GR001",
         "segment_name": "Single-family homes",
@@ -16,7 +16,7 @@
         ]
     },
     {
-        "image": "estate2.jpg",
+        "image": "https://i.ibb.co/sWQXVVj/47b8951d7f45249c0d6921c00371b2bb-cc-ft-960.jpg",
         "estate_title": "Harborview Townhomes",
         "id": "HT002",
         "segment_name": "Townhouses",
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "image": "estate3.jpg",
+        "image": "https://i.ibb.co/zmxsWsh/cityscape-apartments-houston-tx-building-photo.jpg",
         "estate_title": "Cityscape Apartments",
         "id": "CA003",
         "segment_name": "Apartments",
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "image": "estate4.jpg",
+        "image": "https://i.ibb.co/VxRHsdQ/image-1.jpg",
         "estate_title": "Campus Edge Student Housing",
         "id": "CESH004",
         "segment_name": "Student housing",
@@ -64,8 +64,8 @@
         ]
     },
     {
-        "image": "estate5.jpg",
-        "estate_title": "Sunrise Senior Living Community",
+        "image": "https://i.ibb.co/CtnJYRw/63211-Sunrise-Naperville-North-0006-Exterior.jpg",
+        "estate_title": "Sunrise Senior Living Estate",
         "id": "SSLC005",
         "segment_name": "Senior living communities",
         "description": "A welcoming community offering independent and assisted living options, ensuring a fulfilling retirement lifestyle.",
@@ -80,7 +80,7 @@
         ]
     },
     {
-        "image": "estate6.jpg",
+        "image": "https://i.ibb.co/YfgTBhD/palazzo-1101-hero.jpg",
         "estate_title": "Beachfront Vacation Rentals",
         "id": "BVR006",
         "segment_name": "Vacation rentals",
@@ -96,7 +96,7 @@
         ]
     },
     {
-        "image": "estate7.jpg",
+        "image": "https://i.ibb.co/nDk6ZQH/659e083813051f4f3e4abe85208f37a3-cc-ft-960.jpg",
         "estate_title": "Meadowview Estates",
         "id": "ME007",
         "segment_name": "Single-family homes",
@@ -112,7 +112,7 @@
         ]
     },
     {
-        "image": "estate8.jpg",
+        "image": "https://i.ibb.co/3NGNQ1j/image-2.jpg",
         "estate_title": "Lakeview Condominiums",
         "id": "LC008",
         "segment_name": "Apartments",
@@ -128,7 +128,7 @@
         ]
     },
     {
-        "image": "estate9.jpg",
+        "image": "https://i.ibb.co/k4LJ8vR/luxurious-retirement-communities-stellar-senior-living-communities-united-states-colorado-springs-wi.jpg",
         "estate_title": "Pinecrest Retirement Village",
         "id": "PRV009",
         "segment_name": "Senior living communities",
