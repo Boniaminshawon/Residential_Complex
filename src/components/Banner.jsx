@@ -36,7 +36,7 @@ const Banner = () => {
             <SwiperSlide className='relative'>
                 <img src="https://i.ibb.co/dbM60CG/image.jpg" alt="" />
 
-                <div className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div   className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
                         <p className='text-bold text-xl'>Apartments</p>
                         <p className=''>$190,000</p>

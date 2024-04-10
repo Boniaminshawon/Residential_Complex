@@ -1,0 +1,146 @@
+[
+    {
+        "image": "estate1.jpg",
+        "estate_title": "Greenwood Residences",
+        "id": "GR001",
+        "segment_name": "Single-family homes",
+        "description": "Luxurious single-family homes nestled in a serene neighborhood surrounded by nature.",
+        "price": "$750,000",
+        "status": "sale",
+        "area": "2,500 sq ft",
+        "location": "Greenwood Hills, California",
+        "facilities": [
+            "living room",
+            "swimming pool",
+            "kitchen"
+        ]
+    },
+    {
+        "image": "estate2.jpg",
+        "estate_title": "Harborview Townhomes",
+        "id": "HT002",
+        "segment_name": "Townhouses",
+        "description": "Modern townhomes with breathtaking views of the harbor and convenient access to city amenities.",
+        "price": "$3,500/month",
+        "status": "rent",
+        "area": "1,800 sq ft",
+        "location": "Harborview Heights, New York",
+        "facilities": [
+            "living room",
+            "gym",
+            "parking"
+        ]
+    },
+    {
+        "image": "estate3.jpg",
+        "estate_title": "Cityscape Apartments",
+        "id": "CA003",
+        "segment_name": "Apartments",
+        "description": "Contemporary apartments with urban sophistication, offering unmatched convenience and style.",
+        "price": "$200,000",
+        "status": "sale",
+        "area": "1,000 sq ft",
+        "location": "Downtown Metro, Illinois",
+        "facilities": [
+            "living room",
+            "rooftop terrace",
+            "fitness center"
+        ]
+    },
+    {
+        "image": "estate4.jpg",
+        "estate_title": "Campus Edge Student Housing",
+        "id": "CESH004",
+        "segment_name": "Student housing",
+        "description": "Purpose-built student accommodation providing a conducive environment for academic success and vibrant campus life.",
+        "price": "$800/month",
+        "status": "rent",
+        "area": "600 sq ft",
+        "location": "Campus Edge District, Texas",
+        "facilities": [
+            "study area",
+            "laundry room",
+            "game room"
+        ]
+    },
+    {
+        "image": "estate5.jpg",
+        "estate_title": "Sunrise Senior Living Community",
+        "id": "SSLC005",
+        "segment_name": "Senior living communities",
+        "description": "A welcoming community offering independent and assisted living options, ensuring a fulfilling retirement lifestyle.",
+        "price": "$4,000/month",
+        "status": "rent",
+        "area": "1,200 sq ft",
+        "location": "Sunrise Valley, Florida",
+        "facilities": [
+            "dining hall",
+            "library",
+            "walking trails"
+        ]
+    },
+    {
+        "image": "estate6.jpg",
+        "estate_title": "Beachfront Vacation Rentals",
+        "id": "BVR006",
+        "segment_name": "Vacation rentals",
+        "description": "Relax and rejuvenate in these cozy beachfront cottages offering breathtaking views and easy access to sandy shores.",
+        "price": "$300/night",
+        "status": "rent",
+        "area": "900 sq ft",
+        "location": "Sandy Cove Beach, California",
+        "facilities": [
+            "beach access",
+            "fire pit",
+            "BBQ grill"
+        ]
+    },
+    {
+        "image": "estate7.jpg",
+        "estate_title": "Meadowview Estates",
+        "id": "ME007",
+        "segment_name": "Single-family homes",
+        "description": "Spacious single-family homes surrounded by lush green meadows, offering tranquility and comfort.",
+        "price": "$650,000",
+        "status": "sale",
+        "area": "2,200 sq ft",
+        "location": "Meadowview Hills, Oregon",
+        "facilities": [
+            "living room",
+            "playground",
+            "gardening area"
+        ]
+    },
+    {
+        "image": "estate8.jpg",
+        "estate_title": "Lakeview Condominiums",
+        "id": "LC008",
+        "segment_name": "Apartments",
+        "description": "Luxury condominiums with panoramic lake views, featuring upscale amenities for a lavish lifestyle.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "1,800 sq ft",
+        "location": "Lakeview Terrace, Washington",
+        "facilities": [
+            "living room",
+            "swimming pool",
+            "concierge service"
+        ]
+    },
+    {
+        "image": "estate9.jpg",
+        "estate_title": "Pinecrest Retirement Village",
+        "id": "PRV009",
+        "segment_name": "Senior living communities",
+        "description": "A vibrant retirement community offering resort-style living, fostering active lifestyles and social connections.",
+        "price": "$3,500/month",
+        "status": "rent",
+        "area": "1,500 sq ft",
+        "location": "Pinecrest Valley, Arizona",
+        "facilities": [
+            "fitness center",
+            "restaurant",
+            "community garden"
+        ]
+    }
+]
