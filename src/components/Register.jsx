@@ -4,13 +4,11 @@ import 'animate.css';
 import UseAuth from "../Hooks/UseAuth";
 import { useState } from "react";
 import swal from 'sweetalert';
-import { FaEye,FaEyeSlash } from "react-icons/fa6";
-
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 const Register = () => {
     const [registerError, setRegisterError] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-
 
     const { createUser } = UseAuth();
 
@@ -18,7 +16,7 @@ const Register = () => {
         register,
         handleSubmit,
         formState: { errors },
-
+        resetField
     } = useForm()
 
     const onSubmit = (data) => {
@@ -39,6 +37,8 @@ const Register = () => {
             setRegisterError('Your password should have at least one lowercase character.');
             return;
         }
+        
+        setRegisterError('');
 
         createUser(email, password)
             .then(result => {
@@ -47,25 +47,22 @@ const Register = () => {
 
                 swal("Wow!", "Registered successfully!", "success");
 
-
-
-                // resetField('email','password');
-
-
-
             })
             .catch(error => {
                 console.log(error);
             });
 
-
+        resetField('email')
+        resetField('password')
+        resetField('photo')
+        resetField('name')
 
     };
 
 
 
     return (
-        <div  className="bg-green-300 flex justify-center ">
+        <div className="bg-green-300 flex justify-center ">
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
 
@@ -111,7 +108,7 @@ const Register = () => {
                                 />
                                 <span className="text-2xl absolute right-2 bottom-3" onClick={() => setShowPassword(!showPassword)}>
                                     {
-                                        showPassword ?<FaEye></FaEye>:<FaEyeSlash></FaEyeSlash>
+                                        showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>
                                     }
 
                                 </span>

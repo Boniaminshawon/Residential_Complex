@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import 'animate.css';
 import UseAuth from "../Hooks/UseAuth";
 import SocialLogin from "./SocialLogin";
-import {  useState } from "react"
+import { useState } from "react"
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 
@@ -11,11 +11,12 @@ const Login = () => {
     const { signIn } = UseAuth();
     const [showPassword, setShowPassword] = useState(false);
 
-  
+
 
     const {
         register,
         handleSubmit,
+        resetField,
 
         formState: { errors },
     } = useForm()
@@ -26,10 +27,15 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+
             })
             .catch(error => {
                 console.log(error);
             });
+
+        resetField('email');
+        resetField('password');
+
 
     };
     return (
@@ -37,7 +43,7 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
                     <h2 className="font-primary font-medium text-2xl mb-7  animate-pulse">If you don't have any account. Please <Link className="underline text-[#00aeff] font-semibold text-2xl" to={'/register'}>Register</Link> first, or use social login.</h2>
-                    <div  className="card shrink-0  w-[450px] shadow-2xl bg-base-100">
+                    <div className="card shrink-0  w-[450px] shadow-2xl bg-base-100">
                         <div className="text-center ">
                             <h1 className="text-4xl mt-5 font-bold">Login now!</h1>
 

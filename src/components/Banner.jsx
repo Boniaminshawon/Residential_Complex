@@ -9,9 +9,6 @@ import 'swiper/css/navigation';
 
 import './swiper.css';
 
-
-import AOS from "aos";
-import "aos/dist/aos.css";
 import 'animate.css';
 
 
@@ -21,15 +18,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Banner = () => {
 
-    useEffect(() => {
-        AOS.init({
-            once: true,
-            disable: "phone",
-            duration: 1000,
-            easing: "ease-out-cubic",
-        });
-    }, []);
-
+  
 
     return (
         <Swiper
@@ -37,7 +26,7 @@ const Banner = () => {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-                delay: 5000,
+                delay: 4000,
                 disableOnInteraction: false,
             }}
             pagination={{
@@ -54,7 +43,7 @@ const Banner = () => {
 
                 <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
-                        <p className='text-bold text-xl'>Cityscape Apartments</p>
+                        <p className='font-bold text-xl font-primary'>Cityscape Apartments</p>
                         <p className=''>$200,000</p>
                     </div>
                     <p className='text-sm my-2'> 123 Mocbird Lane, Willow Springs, Meadow</p>
@@ -67,9 +56,9 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/mGJxkgX/vacation-rental-websites-1550853606.jpg" alt="" />
-                <div data-aos-once='false' data-aos="fade-up" className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
-                        <p className='font-bold text-xl'>Beachfront Vacation Rentals</p>
+                        <p className='font-bold text-xl font-primary'>Beachfront Vacation Rentals</p>
                         <p className=''>$300/night</p>
                     </div>
                     <p className='text-sm my-2'> 123 Mocbird Lane, Willow Springs, Meadow</p>
@@ -80,9 +69,9 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/hBjrrfc/Silverwell-Estate-Narre-Warren-South-1706743670-1.jpg" alt="" />
-                <div  data-aos="fade-up-right" className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
-                        <p className='font-bold text-xl'>Harborview Townhomes </p>
+                        <p className='font-bold text-xl font-primary'>Harborview Townhomes </p>
                         <p className=''>$3,500/month</p>
                     </div>
                     <p className='text-sm my-2'> 456 Tranquil Avenue, Lakeside Heights, Harborview
@@ -94,9 +83,9 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src='https://i.ibb.co/dPYqYfN/Cadence20-Urban20-Trails-Aerial203-2.jpg' alt="" />
-                <div data-aos="fade-up-left" className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
-                        <p className='font-bold text-xl'>Meadowview Estates</p>
+                        <p className='font-bold text-xl font-primary'>Meadowview Estates</p>
                         <p className=''>$650,000</p>
                     </div>
                     <p className='text-sm my-2'>789 Rustic Road, Cedar Valley, Brookside</p>
@@ -109,9 +98,9 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/8mQ5NQZ/873be99172324ddabf775d03fc608c09.jpg" alt="" />
-                <div data-aos="flip-left" className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
-                        <p className='font-bold text-xl'>Campus Edge Student Housing</p>
+                        <p className='font-bold text-xl font-primary'>Campus Edge Student Housing</p>
                         <p className=''>$800/month</p>
                     </div>
                     <p className='text-sm my-2'> 1010 Sycamore Street, Maplewood, Riverbend</p>
@@ -122,9 +111,9 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/s5FQGbZ/Senior-Living-Communities.jpg" alt="" />
-                <div data-aos="flip-right" className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute   right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
-                        <p className='font-bold text-xl'> Pinecrest Retirement Village</p>
+                        <p className='font-bold text-xl font-primary'> Pinecrest Retirement Village</p>
                         <p className=''>$3,500/month</p>
                     </div>
                     <p className='text-sm my-2'> 1222 Twilight Boulevard, Hillcrest Hills, Summitview</p>

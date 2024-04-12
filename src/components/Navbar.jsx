@@ -26,7 +26,7 @@ const Navbar = () => {
                 </div>
 
 <div>
-    <img className="w-[39%] rounded-md" src="https://i.ibb.co/0txvr1G/image11.png" alt="" />
+    <img className="w-[39%] rounded" src="https://i.ibb.co/0txvr1G/image11.png" alt="" />
 </div>
                
           

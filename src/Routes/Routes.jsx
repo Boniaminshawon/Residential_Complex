@@ -19,6 +19,11 @@ const router = createBrowserRouter([
                 loader: () => fetch('/residential.json')
             },
             {
+                path: '/:id',
+                element: <PropertyDetails></PropertyDetails>,
+                loader: () => fetch('/residential.json')
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
@@ -27,8 +32,8 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path:'/details',
-                element:<PropertyDetails></PropertyDetails>
+                path: '/details',
+                element: <PropertyDetails></PropertyDetails>
             }
 
         ]
