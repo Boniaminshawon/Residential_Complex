@@ -12,12 +12,17 @@ import './swiper.css';
 import 'animate.css';
 
 
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+
+
+
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Banner = () => {
-
+    // AOS.init();
   
 
     return (
@@ -56,7 +61,9 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/mGJxkgX/vacation-rental-websites-1550853606.jpg" alt="" />
-                <div  className='absolute  animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div 
+                // data-aos-duration="2000" data-aos="zoom-in-down" data-aos-once='false'
+                className='absolute   right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
                         <p className='font-bold text-xl font-primary'>Beachfront Vacation Rentals</p>
                         <p className=''>$300/night</p>
@@ -69,7 +76,7 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/hBjrrfc/Silverwell-Estate-Narre-Warren-South-1706743670-1.jpg" alt="" />
-                <div  className='absolute animate__animated  animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
                         <p className='font-bold text-xl font-primary'>Harborview Townhomes </p>
                         <p className=''>$3,500/month</p>
@@ -83,7 +90,7 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src='https://i.ibb.co/dPYqYfN/Cadence20-Urban20-Trails-Aerial203-2.jpg' alt="" />
-                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
                         <p className='font-bold text-xl font-primary'>Meadowview Estates</p>
                         <p className=''>$650,000</p>
@@ -98,7 +105,7 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/8mQ5NQZ/873be99172324ddabf775d03fc608c09.jpg" alt="" />
-                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
                         <p className='font-bold text-xl font-primary'>Campus Edge Student Housing</p>
                         <p className=''>$800/month</p>

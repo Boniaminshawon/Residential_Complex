@@ -5,10 +5,11 @@ import BlogsContainer from "./BlogsContainer";
 
 const Blog = () => {
     const blogs = useLoaderData();
-    console.log(blogs)
+ 
 
     return (
         <section className="">
+             <h1 className="text-center text-3xl font-primary font-bold my-8 bg-[#609dcb] text-white rounded py-5">Explore your residential knowledge</h1>
             <div className=" p-6  bg-white space-y-6 font-primary sm:space-y-12">
                 <div>
                     <Link className=" sm:flex max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline  lg:grid lg:grid-cols-12 dark:bg-gray-50">
@@ -28,7 +29,7 @@ const Blog = () => {
                 </div>
 
 
-                <div className="grid justify-center grid-cols-1 gap-10 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3">
+                <div className=" ">
                 {
                     blogs.map(blog => <BlogsContainer key={blog.id} blog={blog} blogs={blogs}></BlogsContainer> )
                 }

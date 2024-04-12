@@ -6,17 +6,21 @@ import { FiPhoneCall } from "react-icons/fi";
 import ModalCall from "./ModalCall";
 import ModalEmail from "./ModalEmail";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Property = ({ property }) => {
     const { id, image, estate_title, segment_name, price, status, area } = property;
 
-
+    AOS.init();
 
 
     return (
         <div>
-
-            <div className=" border rounded-lg hover:animate-pulse animate__slow animate__zoomIn animate__animated transition  p-4 shadow-md">
+            {/*    */}
+            <div data-aos-duration="2000" data-aos="zoom-in-down" className=" border rounded-lg
+            
+            hover:animate-pulse animate__slow animate__zoomIn animate__animated transition p-4 shadow-md">
 
                 <div className="space-y-4">
                     <div className="space-y-2">
@@ -34,7 +38,7 @@ const Property = ({ property }) => {
                     </div>
 
                     <div className="">
-                        
+
                         <div className="flex text-base font-semibold gap-5 text-white">
                             <button onClick={() => document.getElementById('my_modal_2').showModal()} className="flex items-center gap-2 bg-[#e5eff0] text-green-700 hover:text-red-500  rounded-md px-4 py-1"><FiPhoneCall></FiPhoneCall>Call</button>
                             <button onClick={() => document.getElementById('my_modal_5').showModal()} className="flex items-center gap-2 text-green-700 bg-[#e5eff0] hover:text-red-500 px-4 rounded-md py-1"><MdOutlineMarkEmailUnread></MdOutlineMarkEmailUnread>Email</button>
