@@ -5,6 +5,8 @@ import Login from "../components/Login";
 import Register from "../components/Register";
 import Error from "../pages/Error";
 import PropertyDetails from "../components/PropertyDetails";
+import Blog from "../components/Blog/Blog";
+import BlogsContainer from "../components/Blog/BlogsContainer";
 
 
 const router = createBrowserRouter([
@@ -34,6 +36,16 @@ const router = createBrowserRouter([
             {
                 path: '/details',
                 element: <PropertyDetails></PropertyDetails>
+            },
+            {
+                path: '/blogs',
+                element: <Blog></Blog>,
+                loader: () => fetch('/blogs.json')
+            },
+            {
+                path: '/blogs/:id',
+                element: <BlogsContainer></BlogsContainer>,
+              
             }
 
         ]

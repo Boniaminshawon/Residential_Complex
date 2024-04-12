@@ -10,6 +10,8 @@ const Navbar = () => {
     const links = <>
         <NavLink to='/' className={({ isActive }) => isActive ? ' rounded-lg font-bold border-[#ffff99] text-[#ffff99] border' : ' font-semibold'}>
             <button className="p-2 btn-ghost rounded-lg ">Home</button> </NavLink>
+        <NavLink to='/blogs' className={({ isActive }) => isActive ? ' rounded-lg font-bold border-[#ffff99] text-[#ffff99] border' : ' font-semibold'}>
+            <button className="p-2 btn-ghost rounded-lg ">Blog</button> </NavLink>
 
 
     </>
@@ -57,7 +59,7 @@ const Navbar = () => {
                     </div>
 
                     :
-                    <Link to={'/login'}> <button className="btn bg-[#00aeff] border-[#00aeff] text-xl text-white">Login</button></Link>
+                    <Link to={'/login'}> <button className="btn rounded bg-[#00aeff] border-[#00aeff] text-xl text-white">Login</button></Link>
                 }
             </div>
 

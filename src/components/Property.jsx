@@ -16,7 +16,7 @@ const Property = ({ property }) => {
     return (
         <div>
 
-            <div className=" border rounded-lg hover:animate-pulse animate__zoomIn animate__animated transition  p-4 shadow-md">
+            <div className=" border rounded-lg hover:animate-pulse animate__slow animate__zoomIn animate__animated transition  p-4 shadow-md">
 
                 <div className="space-y-4">
                     <div className="space-y-2">

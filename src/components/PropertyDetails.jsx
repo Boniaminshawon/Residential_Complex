@@ -36,7 +36,7 @@ const PropertyDetails = () => {
                     <p className="border my-4 border-[#609dcb]"></p>
 
                     <div className="space-y-3">
-                        <h2 className="text-3xl font-primary  font-bold">{property.estate_title}</h2>
+                        <h2 className="text-3xl font-primary text-[#004274]   font-bold">{property.estate_title}</h2>
                         <p className="text-lg"><span className="font-semibold text-xl">Location:  </span>{property.location}</p>
                         <p className="text-xl font-primary">{property.description}</p>
                     </div>
@@ -47,9 +47,9 @@ const PropertyDetails = () => {
 
                         <p className="text-lg"><span className="font-semibold text-xl">Area:  </span>{property.area}</p>
                         <p className="text-lg"><span className="font-semibold text-xl">Price:  </span>{property.price}</p>
-                        <p className="text-lg font-primary"><span className="font-semibold text-xl">Special facilities:  </span>
+                        <p className="text-lg font-primary"><span className="font-medium text-xl">Special facilities:  </span>
 
-                            {property.facilities.map((facility, index) => <li className="ml-10" key={index}>{facility}</li>)}
+                            {property.facilities.map((facility, index) => <li className="ml-10  font-semibold" key={index}>{facility}</li>)}
 
                         </p>
                         <div className="flex text-base font-semibold gap-5 text-white">

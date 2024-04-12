@@ -41,7 +41,7 @@ const Banner = () => {
             <SwiperSlide className='relative '>
                 <img src="https://i.ibb.co/dbM60CG/image.jpg" alt="" />
 
-                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute animate__animated animate__backInDown  right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
                         <p className='font-bold text-xl font-primary'>Cityscape Apartments</p>
                         <p className=''>$200,000</p>
@@ -56,7 +56,7 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/mGJxkgX/vacation-rental-websites-1550853606.jpg" alt="" />
-                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute  animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
                         <p className='font-bold text-xl font-primary'>Beachfront Vacation Rentals</p>
                         <p className=''>$300/night</p>
@@ -69,7 +69,7 @@ const Banner = () => {
 
             <SwiperSlide>
                 <img src="https://i.ibb.co/hBjrrfc/Silverwell-Estate-Narre-Warren-South-1706743670-1.jpg" alt="" />
-                <div  className='absolute animate__animated animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
+                <div  className='absolute animate__animated  animate__backInDown right-10 bg-[#004274] text-start text-white p-6 w-[380px]'>
                     <div className='flex justify-between'>
                         <p className='font-bold text-xl font-primary'>Harborview Townhomes </p>
                         <p className=''>$3,500/month</p>
