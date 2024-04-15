@@ -1,15 +1,19 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import 'animate.css';
 import UseAuth from "../Hooks/UseAuth";
 import SocialLogin from "./SocialLogin";
 import { useState } from "react"
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
-    const { signIn } = UseAuth();
+    const { signIn,      updateUserProfile } = UseAuth();
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
+
 
 
 
@@ -22,13 +26,24 @@ const Login = () => {
     } = useForm()
 
     const onSubmit = (data) => {
-        const { email, password } = data;
+        const { email, password,name,image } = data;
         signIn(email, password)
+
             .then(result => {
                 const user = result.user;
-                console.log(user);
 
+                // updateUserProfile(name, image)
+                // .then();
+
+                if (user) {
+                    navigate(location?.state || '/')
+                }
             })
+
+            // .then(result => {
+            //     const user = result.user;
+            // })
+
             .catch(error => {
                 console.log(error);
             });
@@ -40,6 +55,9 @@ const Login = () => {
     };
     return (
         <div className="bg-green-300 flex justify-center ">
+            <Helmet>
+        <title>Login Page</title>
+    </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
                     <h2 className="font-primary font-medium text-2xl mb-7  animate-pulse">If you don't have any account. Please <Link className="underline text-[#00aeff] font-semibold text-2xl" to={'/register'}>Register</Link> first, or use social login.</h2>
@@ -54,16 +72,16 @@ const Login = () => {
                                     <span className="label-text text-lg font-medium">Email</span>
                                 </label>
                                 <input type="email" placeholder="Your Email" className="input input-bordered"
-                                    {...register("email", { required: true })}
+                                    {...register("email")}
                                 />
-                                {errors.email && <span className="text-red-500 mt-2 text-lg">This field is required</span>}
+                             
                             </div>
                             <div className="form-control relative ">
                                 <label className="label">
                                     <span className="label-text text-lg font-medium">Password</span>
                                 </label>
                                 <input type={showPassword ? 'text' : 'password'} placeholder="Password" className="input input-bordered"
-                                    {...register("password", { required: true })}
+                                    {...register("password")}
                                 />
                                 <span className="text-2xl absolute right-2 bottom-3" onClick={() => setShowPassword(!showPassword)}>
                                     {

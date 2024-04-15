@@ -1,5 +1,6 @@
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { PiPenNibDuotone } from "react-icons/pi";
+import { Helmet } from 'react-helmet-async';
 
 const BlogDetails = () => {
     const blogs = useLoaderData();
@@ -12,10 +13,13 @@ const BlogDetails = () => {
     };
     return (
         <div>
+            <Helmet>
+                <title>Blog Details</title>
+            </Helmet>
             <div className=" sm:p-6 sm:pb-10  mt-5 ">
 
                 <div className="space-y-4">
-                    <div className="space-y-2 ">
+                    <div className="space-y-2 object-cover object-center">
                         <img src={blog.blog_image} alt="" className="block object-cover object-center w-full rounded-md sm:h-[410px]" />
 
                     </div>

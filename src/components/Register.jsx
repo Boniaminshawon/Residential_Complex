@@ -1,16 +1,21 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import 'animate.css';
 import UseAuth from "../Hooks/UseAuth";
 import { useState } from "react";
 import swal from 'sweetalert';
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { Helmet } from "react-helmet-async";
+
 
 const Register = () => {
     const [registerError, setRegisterError] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
-    const { createUser } = UseAuth();
+    const { createUser, logOut, updateUserProfile,setReload } = UseAuth();
+    const navigate = useNavigate();
+    const location = useLocation();
+
 
     const {
         register,
@@ -21,8 +26,8 @@ const Register = () => {
 
     const onSubmit = (data) => {
         // console.log(data)
-        const { email, password } = data;
-        console.log(email, password);
+        const { email, password, name, image } = data;
+        
 
 
         if (password.length < 6) {
@@ -37,17 +42,31 @@ const Register = () => {
             setRegisterError('Your password should have at least one lowercase character.');
             return;
         }
-        
+
         setRegisterError('');
 
         createUser(email, password)
             .then(result => {
                 const user = result.user;
-                console.log(user);
 
+                updateUserProfile(name,image)
+                .then(
+                    setReload(true)
+                )
+              
+                logOut();
                 swal("Wow!", "Registered successfully!", "success");
-
+               
+                if (user) {
+                    navigate('/login')
+                }
             })
+            // .then(result => {
+            //     const user = result.user;
+            //     logOut();
+            //     swal("Wow!", "Registered successfully!", "success");
+
+            // })
             .catch(error => {
                 console.log(error);
             });
@@ -57,12 +76,17 @@ const Register = () => {
         resetField('photo')
         resetField('name')
 
+
     };
 
 
 
     return (
+
         <div className="bg-green-300 flex justify-center ">
+            <Helmet>
+                <title>Register Page</title>
+            </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
 

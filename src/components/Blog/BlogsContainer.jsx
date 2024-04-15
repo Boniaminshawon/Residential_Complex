@@ -3,6 +3,7 @@ import { PiPenNibDuotone } from "react-icons/pi";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from "react-helmet-async";
 
 
 const BlogsContainer = ({blog}) => {
@@ -13,11 +14,14 @@ const BlogsContainer = ({blog}) => {
 
     return (
         <div>
+            <Helmet>
+                <title>Blog</title>
+            </Helmet>
             <section className="">
                 
                 <div >
                     
-                    <div  data-aos-duration="1500" data-aos="zoom-in-down"  >
+                    <div  data-aos-duration="1500" data-aos="zoom-in-up"  >
                         
                         <Link to={`/blogs/${id}`} className="mx-auto  shadow-lg flex border-dotted border p-3 border-[#001d74] rounded  mb-5 group hover:no-underline focus:no-underline ">
                           <div className="w-[32%] ">

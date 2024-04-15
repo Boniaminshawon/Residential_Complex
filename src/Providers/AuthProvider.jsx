@@ -1,7 +1,8 @@
-import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../components/Firebase/firebase.config";
 import toast from 'react-hot-toast';
+import { set } from "firebase/database";
 
 
 
@@ -12,8 +13,10 @@ const githubProvider = new GithubAuthProvider();
 
 
 const AuthProvider = ({ children }) => {
+
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [reload, setReload] = useState(false);
 
     // create User
     const createUser = (email, password) => {
@@ -51,17 +54,30 @@ const AuthProvider = ({ children }) => {
     // observer
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            console.log(currentUser);
-            toast.success('Successfully Registered!')
+            toast.success('Successfully Registered!');
             setUser(currentUser);
             setLoading(false);
+
         });
         return () => {
             unSubscribe();
         }
-    }, []);
+    }, [reload]);
 
-    const authInfo = { user, loading, createUser, logOut, signIn, googleSignIn, githubSignIn };
+    // Update users profile
+    const updateUserProfile = (name, image) => {
+      
+        return updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: image
+        },
+      
+        
+        )
+
+    }
+
+    const authInfo = { user,setUser, loading, setReload, createUser, logOut, signIn, googleSignIn, githubSignIn, updateUserProfile };
 
     return (
         <AuthContext.Provider value={authInfo}>

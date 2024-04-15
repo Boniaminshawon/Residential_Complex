@@ -9,11 +9,13 @@
         "status": "sale",
         "area": "2,500 sq ft",
         "location": "Greenwood Hills, California",
+        "geoCode":"[37.8828332,-122.2591574]",
         "facilities": [
             "living room",
             "swimming pool",
             "kitchen"
         ]
+
     },
     {
         "image": "https://i.ibb.co/sWQXVVj/47b8951d7f45249c0d6921c00371b2bb-cc-ft-960.jpg",

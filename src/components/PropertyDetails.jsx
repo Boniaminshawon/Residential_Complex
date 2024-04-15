@@ -1,8 +1,12 @@
-import { useLoaderData, useParams, useNavigate } from "react-router-dom";
+import { useLoaderData, useParams,  Link } from "react-router-dom";
 import { MdOutlineRealEstateAgent, MdOutlineBedroomParent, MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import ModalCall from "./ModalCall";
 import ModalEmail from "./ModalEmail";
+import { Helmet } from "react-helmet-async";
+
+// import { MapContainer, TileLayer, useMap } from 'react-leaflet'
+// import { Marker, Popup } from "leaflet";
 
 const PropertyDetails = () => {
     const properties = useLoaderData();
@@ -11,13 +15,13 @@ const PropertyDetails = () => {
 
     const property = properties.find(property => property.id === id);
 
-    const navigate = useNavigate();
-    const handleGoBack = () => {
-        navigate(-1);
-    }
+   
 
     return (
         <div className="bg-white">
+            <Helmet>
+                <title>Property Details</title>
+            </Helmet>
             <ModalCall></ModalCall>
             <ModalEmail></ModalEmail>
             <h1 className="text-center text-3xl font-primary font-bold my-8 bg-[#609dcb] text-white rounded py-5">Details of this Property</h1>
@@ -57,13 +61,29 @@ const PropertyDetails = () => {
                             <button onClick={() => document.getElementById('my_modal_5').showModal()} className="flex items-center gap-2 text-green-700 bg-[#e5eff0] hover:text-red-500 px-4 rounded-md py-1"><MdOutlineMarkEmailUnread></MdOutlineMarkEmailUnread>Email</button>
                         </div>
                         <div className="pt-4">
-                            <button onClick={handleGoBack} className="py-2 text-white bg-[#2d74aa] bg-[#00aeff font-bold text-lg font-primary hover:bg-[#004274] w-full rounded-md">Go Back</button>
+                        <Link  to='/' >
+                        <button className="py-2 text-white bg-[#2d74aa] bg-[#00aeff font-bold text-lg font-primary hover:bg-[#004274] w-full rounded-md">Go Back</button></Link>
                         </div>
 
                     </div>
                 </div>
 
             </div>
+
+
+            {/* <div>
+                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+                    <TileLayer
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={[51.505, -0.09]}>
+                        <Popup>
+                            A pretty CSS3 popup. <br /> Easily customizable.
+                        </Popup>
+                    </Marker>
+                </MapContainer>
+            </div> */}
 
         </div>
     );

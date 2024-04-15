@@ -8,6 +8,8 @@ import PropertyDetails from "../components/PropertyDetails";
 import Blog from "../components/Blog/Blog";
 import BlogsContainer from "../components/Blog/BlogsContainer";
 import BlogDetails from "../components/Blog/BlogDetails";
+import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
+import UpdateProfile from "../pages/UpdateProfile";
 
 
 const router = createBrowserRouter([
@@ -23,7 +25,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/:id',
-                element: <PropertyDetails></PropertyDetails>,
+                element: <PrivateRoute><PropertyDetails></PropertyDetails></PrivateRoute>,
                 loader: () => fetch('/residential.json')
             },
             {
@@ -34,20 +36,23 @@ const router = createBrowserRouter([
                 path: '/register',
                 element: <Register></Register>
             },
-            {
-                path: '/details',
-                element: <PropertyDetails></PropertyDetails>
-            },
+            // {
+            //     path: '/details',
+            //     element: <PropertyDetails></PropertyDetails>
+            // },
             {
                 path: '/blogs',
-                element: <Blog></Blog>,
+                element: <PrivateRoute><Blog></Blog></PrivateRoute>,
                 loader: () => fetch('/blogs.json')
             },
             {
                 path: '/blogs/:id',
                 element: <BlogDetails></BlogDetails>,
                 loader:()=>fetch('/blogs.json')
-              
+            },
+            {
+                path:'/profile',
+                element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             }
 
         ]
