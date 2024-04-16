@@ -1,6 +1,7 @@
 import { Link, useRouteError } from "react-router-dom";
 
 import 'animate.css';
+import { Helmet } from "react-helmet-async";
 
 const Error = () => {
 
@@ -11,6 +12,11 @@ const Error = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center">
+            <Helmet>
+                <title>
+                Error
+                </title>
+            </Helmet>
             <div
             className="space-y-8 animate__animated animate__backInDown justify-center flex items-center flex-col">
          

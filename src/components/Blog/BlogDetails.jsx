@@ -1,6 +1,6 @@
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { PiPenNibDuotone } from "react-icons/pi";
-import { Helmet } from 'react-helmet-async';
+
 
 const BlogDetails = () => {
     const blogs = useLoaderData();
@@ -13,12 +13,10 @@ const BlogDetails = () => {
     };
     return (
         <div>
-            <Helmet>
-                <title>Blog Details</title>
-            </Helmet>
-            <div className=" sm:p-6 sm:pb-10  mt-5 ">
+          
+            <div className=" sm:p-6 sm:pb-10  md:mt-5 ">
 
-                <div className="space-y-4">
+                <div className="space-y-4 md:p-0 p-3">
                     <div className="space-y-2 object-cover object-center">
                         <img src={blog.blog_image} alt="" className="block object-cover object-center w-full rounded-md sm:h-[410px]" />
 
@@ -31,9 +29,9 @@ const BlogDetails = () => {
 
                             <p className=" font-secondary">Date: {blog.date}</p>
                         </div>
-                        <p className="font-secondary sm:text-lg py-3 sm:py-10">{blog.description}</p>
+                        <p className="font-secondary sm:text-lg py-3 sm:py-10 sm:px-10">{blog.description}</p>
 
-                        <button className='text-white font-bold  py-3  hover:bg-[#004274] bg-[#2d74aa] rounded-lg w-full text-3xl' onClick={handleGoBack}>Go Back</button>
+                        <button className='text-white font-bold py-2 md:py-3  hover:bg-[#004274] bg-[#2d74aa] rounded text-2xl w-full md:text-3xl' onClick={handleGoBack}>Go Back</button>
                     </div>
                 </div>
             </div>

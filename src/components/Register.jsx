@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import 'animate.css';
 import UseAuth from "../Hooks/UseAuth";
 import { useState } from "react";
@@ -12,9 +12,9 @@ const Register = () => {
     const [registerError, setRegisterError] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
-    const { createUser, logOut, updateUserProfile,setReload } = UseAuth();
+    const { createUser, logOut, updateUserProfile, setReload } = UseAuth();
     const navigate = useNavigate();
-    const location = useLocation();
+
 
 
     const {
@@ -25,10 +25,8 @@ const Register = () => {
     } = useForm()
 
     const onSubmit = (data) => {
-        // console.log(data)
-        const { email, password, name, image } = data;
-        
 
+        const { email, password, name, image } = data;
 
         if (password.length < 6) {
             setRegisterError('Password should be at least 6 characters or longer');
@@ -47,27 +45,26 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
+                swal("Wow!", "Registered successfully!", "success");
                 const user = result.user;
 
-                updateUserProfile(name,image)
-                .then(
-                    setReload(true)
-                )
-              
-                logOut();
-                swal("Wow!", "Registered successfully!", "success");
-               
-                if (user) {
-                    navigate('/login')
-                }
-            })
-            // .then(result => {
-            //     const user = result.user;
-            //     logOut();
-            //     swal("Wow!", "Registered successfully!", "success");
+                updateUserProfile(name, image)
+                    .then(
+                        setReload(true)
+                    )
 
-            // })
+                logOut();
+
+
+                setTimeout(() => {
+                    if (user) {
+                        navigate('/login')
+                    }
+                }, 3000);
+            })
+      
             .catch(error => {
+                swal("Oops!", "Your email already have used!", "error");
                 console.log(error);
             });
 
@@ -79,20 +76,18 @@ const Register = () => {
 
     };
 
-
-
     return (
 
-        <div className="bg-green-300 flex justify-center ">
+        <div className=" flex justify-center ">
             <Helmet>
-                <title>Register Page</title>
+                <title>Register Page-Residential Complex</title>
             </Helmet>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="md:hero w-full lg:min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
 
-                    <div className="card shrink-0 w-[450px] shadow-2xl bg-base-100">
+                    <div className="card shrink-0 lg:w-[450px] w-full shadow-2xl bg-base-100">
                         <div className="text-center ">
-                            <h1 className="text-4xl mt-5 font-bold">Register now!</h1>
+                            <h1 className="md:text-4xl text-[28px] mt-5 font-bold">Register now!</h1>
 
                         </div>
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
@@ -101,8 +96,9 @@ const Register = () => {
                                     <span className="label-text text-lg font-medium">Name</span>
                                 </label>
                                 <input type="text" placeholder="Your Name" className="input input-bordered"
-                                    {...register("name")}
+                                    {...register("name", { required: true })}
                                 />
+                                {errors.password && <span className="text-red-500 mt-2 text-lg">This field is required</span>}
 
                             </div>
                             <div className="form-control">
@@ -118,26 +114,29 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text text-lg font-medium">Photo</span>
                                 </label>
-                                <input type="text" placeholder="Photo URL" className="input input-bordered"
-                                    {...register("photo")}
+                                <input type="text"  placeholder="Photo URL" className="input input-bordered"
+                                    {...register("photo", { required: true })}
                                 />
+                                {errors.password && <span className="text-red-500 mt-2 text-lg">This field is required</span>}
 
                             </div>
-                            <div className="form-control relative ">
+                            <div className="form-control ">
                                 <label className="label">
                                     <span className="label-text text-lg font-medium">Password</span>
                                 </label>
-                                <input type={showPassword ? 'text' : 'password'} placeholder="Password" className="input input-bordered"
+                                <input type={showPassword ? 'text' : 'password'} placeholder="Password" className="input  input-bordered"
                                     {...register("password", { required: true })}
                                 />
-                                <span className="text-2xl absolute right-2 bottom-3" onClick={() => setShowPassword(!showPassword)}>
-                                    {
-                                        showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>
-                                    }
+                                <div className="relative">
+                                    <span className="text-2xl absolute right-2 bottom-3" onClick={() => setShowPassword(!showPassword)}>
+                                        {
+                                            showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>
+                                        }
 
-                                </span>
+                                    </span>
+                                </div>
 
-                                {registerError && <p className="text-red-500 font-primary text-lg mt-1">{registerError}</p>}
+                                {registerError && <p className="text-red-500  font-primary text-lg mt-1">{registerError}</p>}
 
                                 {errors.password && <span className="text-red-500 mt-2 text-lg">This field is required</span>}
                             </div>
@@ -145,8 +144,8 @@ const Register = () => {
                                 <input type="submit" className="bg-[#00aeff] text-white font-bold btn hover:bg-[#004274] text-lg" value="Register" />
                             </div>
                         </form>
-                        <div className="pl-8 pb-7 font-primary font-medium text-xl">
-                            <p>Already have account? Please <Link className="underline text-[#00aeff] font-semibold text-2xl" to={'/login'}>Login</Link></p>
+                        <div className="md:px-8 px-4 pb-7 font-primary text-center font-medium text-lg md:text-xl">
+                            <p>Already have account? Please <Link className="underline text-[#00aeff] font-semibold text-xl md:text-2xl" to={'/login'}>Login</Link></p>
                         </div>
                     </div>
                 </div>

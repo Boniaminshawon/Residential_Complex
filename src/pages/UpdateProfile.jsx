@@ -16,22 +16,22 @@ const UpdateProfile = () => {
             })
     }
     return (
-        <div className="flex justify-center bg-white">
+        <div className="flex justify-center  bg-white">
             <Helmet>
                 <title>
                     Update Profile-Residential Complex
                 </title>
             </Helmet>
-            <div className="flex flex-col  justify-center  p-6  rounded-xl sm:px-12 ">
+            <div className="flex flex-col w-full justify-center  py-6  rounded-xl md:px-12 ">
                 <div className="text-center ">
-                    <h1 className="text-4xl font-bold">Update your profile</h1>
+                    <h1 className="md:text-4xl text-[28px] font-bold">Update your profile</h1>
                 </div>
-               
 
-                <div className="hero  ">
-                    <div className="hero-content flex-col ">
 
-                    <img src={user?.photoURL || "https://i.ibb.co/L1kVMdW/images-removebg-preview.png"} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+                <div className="md:hero  ">
+                    <div className="hero-content  md:w-[450px] flex-col ">
+
+                        <img src={user?.photoURL || "https://i.ibb.co/L1kVMdW/images-removebg-preview.png"} alt="" className="w-32 h-32 mx-auto rounded-full  aspect-square" />
                         <div className="card shrink-0 w-full  shadow-2xl bg-base-100">
                             <form onSubmit={handleSubmit} className="card-body">
                                 <div className="form-control">
@@ -50,7 +50,7 @@ const UpdateProfile = () => {
                                     <label className="label">
                                         <span className="label-text font-medium text-xl">Photo url</span>
                                     </label>
-                                    <input type="text" name="photo" defaultValue={user?.photoURL || "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} className="font-semibold input input-bordered" />
+                                    <input type="text" name="photo" defaultValue={user?.photoURL || "https://i.ibb.co/L1kVMdW/images-removebg-preview.png"} className="font-semibold input input-bordered" />
                                 </div>
 
 

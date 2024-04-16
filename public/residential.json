@@ -51,11 +51,12 @@
     },
     {
         "image": "https://i.ibb.co/VxRHsdQ/image-1.jpg",
-        "estate_title": "Campus Edge Student Housing",
+        "estate_title": "Campus Student Housing",
         "id": "CESH004",
         "segment_name": "Student housing",
         "description": "Campus Edge Student Housing offers modern and convenient living spaces tailored specifically for students. Located within close proximity to campus, these residences provide easy access to academic facilities and campus life. With contemporary amenities and a focus on fostering a conducive environment for studying and socializing, Campus Edge Student Housing is the perfect choice for students seeking a comfortable and enriching college experience.",
         "status": "rent",
+        "price": "$4,000/month",
         "area": "600 sq ft",
         "location": "Campus Edge District, Texas",
         "facilities": [

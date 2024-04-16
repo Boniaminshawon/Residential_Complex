@@ -6,10 +6,10 @@ import { Outlet } from "react-router-dom";
 const Root = () => {
     return (
         <div>
-            <div className="h-[73px]">
+            <div className="md:h-[72px] h-[64px]">
                 <Navbar></Navbar>
             </div>
-            <div className="container mx-auto  ">
+            <div className="xl:container md:mx-1  xl:mx-auto  ">
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>

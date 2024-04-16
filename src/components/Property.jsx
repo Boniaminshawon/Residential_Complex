@@ -18,19 +18,20 @@ const Property = ({ property }) => {
     return (
         <div>
             {/*    hover:animate-pulse animate__slow animate__zoomIn animate__animated transition  */}
-            <div data-aos-duration="1600" data-aos="zoom-in-down" className=" border rounded-lg p-4 shadow-md">
+            <div data-aos-duration="1600" data-aos="zoom-in-down" className=" border rounded-lg md:p-4 p-[10px] shadow-md">
 
-                <div className="space-y-4">
-                    <div className="space-y-2">
+                <div className="md:space-y-4 space-y-3">
+                    <div className="space-y-2 ">
                         <div className="flex justify-between font-primary">
-                            <h3 className="text-xl gap-2  font-semibold flex items-center "><MdOutlineRealEstateAgent className="text-[#00aeff]"></MdOutlineRealEstateAgent> {segment_name}</h3>
-                            <p className="flex items-center gap-1 font-medium text-xl"><MdOutlineBedroomParent className="text-[#004274]"></MdOutlineBedroomParent> {status}</p>
+                            <h3 className="md:text-xl text-lg gap-2 text-start  font-semibold flex justify-start items-center "><MdOutlineRealEstateAgent className="text-[#00aeff]"></MdOutlineRealEstateAgent> {segment_name}</h3>
+
+                            <p className="flex items-center gap-1 font-medium md:text-xl text-lg"><MdOutlineBedroomParent className="text-[#004274]"></MdOutlineBedroomParent> {status}</p>
                         </div>
 
-                        <img src={image} alt="" className="block object-cover object-center w-full rounded-md h-72 " />
+                        <img src={image} alt="" className="block object-cover object-center w-full rounded-md md:h-72 h-[210px] " />
                     </div>
-                    <h3 className="text-[26px] text-start font-primary font-bold ">{estate_title}</h3>
-                    <div className="flex justify-between text-lg font-medium">
+                    <h3 className="md:text-[26px] text-[22px] text-start font-primary font-bold ">{estate_title}</h3>
+                    <div className="flex justify-between md:text-lg text-base font-medium">
                         <p>Area:{area}</p>
                         <p>Price:{price}</p>
                     </div>
@@ -43,7 +44,7 @@ const Property = ({ property }) => {
                         </div>
 
                         <Link to={`/${id}`}>
-                            <button className='bg-[#00aeff]  hover:bg-[#004274] rounded-md  py-2 font-primary font-bold text-xl mt-5 text-white w-full'>View Property</button>
+                            <button className='bg-[#00aeff]  hover:bg-[#004274] rounded-md  py-2 font-primary font-bold text-xl  mt-5 text-white w-full'>View Property</button>
                         </Link>
 
                         <ModalCall></ModalCall>
