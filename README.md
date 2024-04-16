@@ -1,8 +1,25 @@
 # Residential Complex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Website Live link:  
 
-Currently, two official plugins are available:
+## Features and Characteristics of this website:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-This is the Real Estate website on Residential category.
+-There have many types of residential property and Users can explore those.
+-Users can Register and login in this website to get better experience.
+-There have privet route . To visit these route users have to login first.
+-Users can login by google and github.
+-This website is responsive for all device.
+- Unfortunately if create any kind of error users will show a error massage in the error page    and they can come back in the home page.
+
+
+
+# npm package name:
+
+1. AOS Package,
+2. Animate.css,
+3. React Hook form,
+4. Swiper slider
+
+
+
