@@ -9,21 +9,37 @@ const NewProjects = () => {
     const newProjects = useLoaderData();
 
     return (
-        <div>
+        <div  className="bg-white">
             <Helmet>
                 <title>New Project-Residential Complex</title>
             </Helmet>
-            <h1 className="text-center md:text-3xl text-2xl font-primary font-bold md:my-8 my-5 bg-[#609dcb] text-white rounded md:py-5 py-2">Explore our new project </h1>
-         <div className="space-y-10">
-         <LuxuriousApartment newProjects={newProjects}></LuxuriousApartment>
-         <h1 className=" bg-[#609dcb bg-[#004274]   rounded md:py-6 py-2"> </h1>
-        
-          
-            <TownHall newProjects={newProjects}></TownHall>
-            <h1 className=" bg-[#609dcb bg-[#004274]   rounded md:py-6 py-2"> </h1>
-            <Apartments newProjects={newProjects}></Apartments>
-         </div>
-         
+
+            <div className="hero md:h-[450px]  bg-center bg-cover" style={{ backgroundImage: 'url( https://i.ibb.co/ryKGSng/maxresdefault-2.jpg)' }}>
+
+                <div className="hero-overlay bg-opacity-35"> </div>
+
+                <div className="hero-content   text-center ">
+                    <div className="animate__animated animate__backInDown animate__slow">
+                        <div className="flex  justify-center">
+                            <img className="w-[27%]" src="https://i.ibb.co/hRBXMRc/image.png" alt="" />
+                        </div>
+                        <h1 className="mt-5 font-primary  text-2xl md:text-5xl text-[#00d5ff text-white font-bold animate__animated animate__fadeInUpBig animate__slow ">Choose The Best Luxury Property</h1>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div className="space-y-10 mt-5">
+                <LuxuriousApartment newProjects={newProjects}></LuxuriousApartment>
+                <h1 className=" bg-[#609dcb bg-[#004274]   rounded md:py-6 py-2"> </h1>
+
+
+                <TownHall newProjects={newProjects}></TownHall>
+                <h1 className=" bg-[#609dcb bg-[#004274]   rounded md:py-6 py-2"> </h1>
+                <Apartments newProjects={newProjects}></Apartments>
+            </div>
+
         </div>
     );
 };

@@ -17,7 +17,7 @@ const Property = ({ property }) => {
 
     return (
         <div>
-            {/*    hover:animate-pulse animate__slow animate__zoomIn animate__animated transition  */}
+           
             <div data-aos-duration="1600" data-aos="zoom-in-down" className=" border rounded-lg md:p-4 p-[10px] shadow-md">
 
                 <div className="md:space-y-4 space-y-3">

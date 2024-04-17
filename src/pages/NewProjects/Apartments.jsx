@@ -47,7 +47,7 @@ const Apartments = ({ newProjects }) => {
                     </div>
                 </div>
 
-                <div data-aos-duration="2000" data-aos="zoom-in" className="p-4 border shadow-lg rounded ">
+                <div data-aos-duration="2000" data-aos="zoom-in-up" className="p-4 border shadow-lg rounded ">
                     <img src={newProjects[1].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[1].estate_title}</h3>
 

@@ -25,10 +25,10 @@ const PropertyDetails = () => {
             <ModalCall></ModalCall>
             <ModalEmail></ModalEmail>
             <div className="hero md:h-[450px]  bg-center bg-cover" style={{ backgroundImage: 'url(https://i.ibb.co/34jLj4X/design-visualization.jpg)' }}>
-                <div className="hero-overlay bg-opacity-35"></div>
+                <div className="hero-overlay  bg-opacity-40"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="">
-                        <h1 className="mb-5 animate__animated animate__zoomInDown animate__slower animate__delay-2s  font-primary text-2xl md:text-5xl text-[#00d5ff text-white font-bold">Explore the <br /> <span className="">{property.estate_title}</span> </h1>
+                        <h1 className="mb-5 animate__animated animate__zoomInDown animate__slower animate__delay-1s  font-primary text-2xl md:text-5xl text-[#00d5ff text-white font-bold">Explore the <br /> <span className="">{property.estate_title}</span> </h1>
                         <p className="mb-5 md:px-30   lg:px-40 text-base md:text-xl">{property.description.slice(0,150)}....</p>
                        <a href="#details"> <button className="bg-[#00aeff] md:py-2 py-1 px-4 rounded md:text-xl text-lg font-bold animate-pulse text-white">View Details</button></a>
                     </div>

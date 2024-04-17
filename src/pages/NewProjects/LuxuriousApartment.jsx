@@ -3,9 +3,11 @@ import ModalEmail from "../../components/ModalEmail";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const LuxuriousApartment = ({ newProjects }) => {
+    AOS.init();
     return (
         <div className="bg-white">
             <ModalCall></ModalCall>
@@ -18,7 +20,7 @@ const LuxuriousApartment = ({ newProjects }) => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
 
 
-                <div   className="animate__animated animate__fadeInTopLeft animate__slow  p-4 border shadow-lg rounded ">
+                <div data-aos-duration="1700"  data-aos="fade-up-right"   className="  p-4 border shadow-lg rounded ">
                     <img src={newProjects[5].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[5].estate_title}</h3>
 
@@ -40,7 +42,7 @@ const LuxuriousApartment = ({ newProjects }) => {
                     </div>
                 </div>
 
-                <div className=" animate__zoomIn animate__animated  animate__slower p-4 border shadow-lg rounded ">
+                <div data-aos-duration="2000" data-aos="zoom-in-up" className="  p-4 border shadow-lg rounded ">
                     <img src={newProjects[6].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[6].estate_title}</h3>
 
@@ -61,7 +63,8 @@ const LuxuriousApartment = ({ newProjects }) => {
                         <button onClick={() => document.getElementById('my_modal_5').showModal()} className="flex items-center gap-2 text-green-700 bg-[#e5eff0] hover:text-red-500 px-4 rounded-md py-1"><MdOutlineMarkEmailUnread></MdOutlineMarkEmailUnread>Email</button>
                     </div>
                 </div>
-                <div className="animate__animated animate__fadeInTopRight animate__slow p-4 border shadow-lg rounded ">
+
+                <div data-aos-duration="1700"  data-aos="fade-up-left" className=" p-4 border shadow-lg rounded ">
                     <img src={newProjects[7].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] mt-2 text-[20px] text-start font-primary font-bold ">{newProjects[7].estate_title}</h3>
 
@@ -82,8 +85,6 @@ const LuxuriousApartment = ({ newProjects }) => {
                         <button onClick={() => document.getElementById('my_modal_5').showModal()} className="flex items-center gap-2 text-green-700 bg-[#e5eff0] hover:text-red-500 px-4 rounded-md py-1"><MdOutlineMarkEmailUnread></MdOutlineMarkEmailUnread>Email</button>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );

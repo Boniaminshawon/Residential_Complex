@@ -85,7 +85,7 @@ const Banner = () => {
 
             <SwiperSlide
           
-                style={{ backgroundImage: 'url("https://i.ibb.co/hBjrrfc/Silverwell-Estate-Narre-Warren-South-1706743670-1.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
+                style={{ backgroundImage: 'url("https://i.ibb.co/6HYpBNf/atkinson-01.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
 
                 <div className='md:pr-10 mb-5 md:mb-0 justify-center md:items-center items-end h-full w-full flex md:justify-end'>
                     <div className=' bg-[#004274] text-start text-white  h-[160px p-2  md:p-6 w-[380px]'>
@@ -120,7 +120,7 @@ const Banner = () => {
 
 
             <SwiperSlide
-                style={{ backgroundImage: 'url("https://i.ibb.co/8mQ5NQZ/873be99172324ddabf775d03fc608c09.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
+                style={{ backgroundImage: 'url("https://i.ibb.co/vZ95hjJ/campus-edge-apartments-whitewater-wi-building-photo.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
 
                 <div className='md:pr-10 mb-5 md:mb-0 justify-center md:items-center items-end h-full w-full flex md:justify-end'>
                     <div className=' bg-[#004274] text-start text-white  h-[165px p-2  md:p-6 w-[380px]'>
@@ -136,7 +136,7 @@ const Banner = () => {
             </SwiperSlide>
 
             <SwiperSlide
-                style={{ backgroundImage: 'url("https://i.ibb.co/s5FQGbZ/Senior-Living-Communities.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
+                style={{ backgroundImage: 'url("https://i.ibb.co/ryKGSng/maxresdefault-2.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
 
                 <div className='md:pr-10 mb-5 md:mb-0 justify-center md:items-center items-end h-full w-full flex md:justify-end'>
                     <div className=' bg-[#004274] text-start text-white  h-[165px p-2  md:p-6 w-[380px]'>

@@ -17,7 +17,7 @@
     {
         "id": "2",
         "image": "https://i.ibb.co/162hPQV/dd8f2939-c346-4cb0-a40a-bf3b7744994d.jpg",
-        "estate_title": "Cozy Countryside Retreat",
+        "estate_title": "Cozy Countryside Retreat villa",
         "location": "Rural Village, ABC",
         "area": "2000 sq ft",
         "facilities": [
@@ -62,7 +62,7 @@
     {
         "id": "5",
         "image": "https://i.ibb.co/ckzmdKF/ed8c1044.jpg",
-        "estate_title": "Charming Townhouse ",
+        "estate_title": "Charming Townhouse in Historic ",
         "location": "Historic District, LMN",
         "area": "2500 sq ft",
         "facilities": [
@@ -113,7 +113,7 @@
             "Exposed brick walls",
             "Art studio space"
         ],
-        "short_description": "Contemporary loft-style apartment located in the vibrant and creative art district. Perfect for artists and those who appreciate modern design.",
+        "short_description": "Contemporary loft-style apartment located in the vibrant and creative art district. Perfect for those who appreciate modern design.",
         "price": "$450,000"
     }
 ]
