@@ -10,6 +10,8 @@ import BlogsContainer from "../components/Blog/BlogsContainer";
 import BlogDetails from "../components/Blog/BlogDetails";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import UpdateProfile from "../pages/UpdateProfile";
+import NewProjects from "../pages/NewProjects/NewProjects";
+
 
 
 const router = createBrowserRouter([
@@ -44,11 +46,18 @@ const router = createBrowserRouter([
             {
                 path: '/blogs/:id',
                 element: <BlogDetails></BlogDetails>,
-                loader:()=>fetch('/blogs.json')
+                loader: () => fetch('/blogs.json')
             },
             {
-                path:'/profile',
-                element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+                path: '/profile',
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>,
+
+
+            },
+            {
+                path: '/projects',
+                element: <NewProjects></NewProjects>,
+                loader: () => fetch('singleFamily.json')
             }
 
         ]

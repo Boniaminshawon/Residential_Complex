@@ -29,7 +29,7 @@ const UpdateProfile = () => {
 
 
                 <div className="md:hero  ">
-                    <div className="hero-content  md:w-[450px] flex-col ">
+                    <div className="hero-content  md:w-[500px] flex-col ">
 
                         <img src={user?.photoURL || "https://i.ibb.co/L1kVMdW/images-removebg-preview.png"} alt="" className="w-32 h-32 mx-auto rounded-full  aspect-square" />
                         <div className="card shrink-0 w-full  shadow-2xl bg-base-100">

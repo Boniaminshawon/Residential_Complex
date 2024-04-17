@@ -46,7 +46,6 @@ const Banner = () => {
             <SwiperSlide
                 style={{ backgroundImage: 'url("https://i.ibb.co/dbM60CG/image.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}
             >
-              
                 <div
                     className='md:pr-10  justify-center mb-5 md:mb-0 md:items-center items-end h-full  w-full flex  md:justify-end'>
 

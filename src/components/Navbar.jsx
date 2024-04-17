@@ -7,14 +7,19 @@ const Navbar = () => {
 
 
     const links = <>
-        <NavLink to='/' className={({ isActive }) => isActive ? ' rounded bg-[#00aeff] font-bold  border' : ' font-semibold'}>
-            <button className="px-3  py-2 hover:bg-[#00aeff] btn-ghost rounded  ">Home</button> </NavLink>
+        <div className="space-x-4 text-base">
+            <NavLink to='/' className={({ isActive }) => isActive ? ' py-[8px] rounded bg-[#00aeff] font-bold  border' : ' font-semibold'}>
+                <button className="px-3  py-2 hover:bg-[#00aeff] btn-ghost rounded  ">Home</button> </NavLink>
 
-        <NavLink to='/blogs' className={({ isActive }) => isActive ? ' rounded bg-[#00aeff] font-bold  border' : ' font-semibold'}>
-            <button className="px-3  py-2  hover:bg-[#00aeff] btn-ghost rounded ">Blog</button> </NavLink>
+            <NavLink to='/blogs' className={({ isActive }) => isActive ? ' py-[8px] rounded bg-[#00aeff] font-bold  border' : ' font-semibold'}>
+                <button className="px-3  py-2  hover:bg-[#00aeff] btn-ghost rounded ">Blog</button> </NavLink>
 
-        <NavLink to={'/profile'} className={({ isActive }) => isActive ? ' rounded bg-[#00aeff] font-bold  border' : ' font-semibold'}>
-            <button className="px-3 py-2 btn-ghost hover:bg-[#00aeff] rounded ">Update Profile</button> </NavLink>
+            <NavLink to={'/projects'} className={({ isActive }) => isActive ? 'py-[8px] rounded bg-[#00aeff] font-bold  border' : ' font-semibold'}>
+                <button className="px-3 py-2 btn-ghost hover:bg-[#00aeff] rounded ">New Projects</button> </NavLink>
+            <NavLink to={'/profile'} className={({ isActive }) => isActive ? 'py-[8px] rounded bg-[#00aeff] font-bold  border' : ' font-semibold'}>
+                <button className="px-3 py-2 btn-ghost hover:bg-[#00aeff] rounded ">Update Profile</button> </NavLink>
+
+        </div>
     </>
     return (
         <div className="navbar bg-[#004274] text-white font-primary fixed z-10">
@@ -29,11 +34,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="">
-                    <img className="lg:w-[51%] xl:w-[40%] md:w-[65%] w-full rounded" src="https://i.ibb.co/0txvr1G/image11.png" alt="" />
+                    <img className="lg:w-[51%] xl:w-[42%] md:w-[65%] w-full rounded" src="https://i.ibb.co/0txvr1G/image11.png" alt="" />
                 </div>
 
             </div>
-            
+
             <div className="navbar-center hidden md:flex">
                 <ul className="menu menu-horizontal px-1">
                     {links}
@@ -51,13 +56,13 @@ const Navbar = () => {
 
 
                         <div>
-                            <button onClick={logOut} className="sm:py-2 py-1 px-3 sm:h-[44px] rounded font-bold bg-[#00aeff] border-[#00aeff]  text-lg sm:text-xl text-white">Log Out</button>
+                            <button onClick={logOut} className="sm:py-2 py-1 px-3 sm:h-[44px] rounded font-bold bg-[#00aeff] border-[#00aeff]  text-base sm:text-lg text-white">Log Out</button>
                         </div>
 
                     </div>
 
                     :
-                    <Link to={'/login'}> <button className="py-1 sm:py-2 px-3 sm:h-[44px] font-bold rounded bg-[#00aeff] border-[#00aeff] text-lg sm:text-xl text-white">Login</button></Link>
+                    <Link to={'/login'}> <button className="py-1 sm:py-2 px-3 sm:h-[44px] font-bold rounded bg-[#00aeff] border-[#00aeff] text-base sm:text-lg text-white">Login</button></Link>
                 }
             </div>
         </div>

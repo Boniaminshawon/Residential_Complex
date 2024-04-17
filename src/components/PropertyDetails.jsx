@@ -30,7 +30,7 @@ const PropertyDetails = () => {
                     <div className="">
                         <h1 className="mb-5 animate__animated animate__zoomInDown animate__slower animate__delay-2s  font-primary text-2xl md:text-5xl text-[#00d5ff text-white font-bold">Explore the <br /> <span className="">{property.estate_title}</span> </h1>
                         <p className="mb-5 md:px-30   lg:px-40 text-base md:text-xl">{property.description.slice(0,150)}....</p>
-                       <a href="#details"> <button className="bg-[#00aeff] md:py-2 py-1 px-4 rounded md:text-xl text-lg font-bold text-white">View Details</button></a>
+                       <a href="#details"> <button className="bg-[#00aeff] md:py-2 py-1 px-4 rounded md:text-xl text-lg font-bold animate-pulse text-white">View Details</button></a>
                     </div>
                 </div>
             </div>
@@ -39,11 +39,11 @@ const PropertyDetails = () => {
             <h1 id="details" className="text-center md:text-3xl text-2xl font-primary font-bold md:my-8 my-5 bg-[#609dcb] text-white rounded py-3 md:py-5">Details of this Property</h1>
             <div  className="flex flex-col lg:flex-row gap-4">
 
-                <div className="lg:w-[45%] flex animate__animated animate__fadeInTopLeft justify-center items-center  p-4  border-[#609dcb] rounded border-2 border-dotted">
+                <div className="lg:w-[45%] flex animate__animated animate__slow animate__fadeInTopLeft justify-center items-center  p-4  border-[#609dcb] rounded border-2 border-dotted">
                     <img className="rounded h-full" src={property.image} alt="" />
                 </div>
 
-                <div className="flex-1 md:p-5 p-2 animate__animated animate__fadeInTopRight border-[#609dcb] border-dotted rounded border-2">
+                <div className="flex-1 md:p-5 p-2 animate__slow animate__animated animate__fadeInTopRight border-[#609dcb] border-dotted rounded border-2">
 
                     {/* <p className="border border-[#609dcb]"></p> */}
                     <div className="flex justify-between my-2 font-primary">
@@ -83,20 +83,6 @@ const PropertyDetails = () => {
 
             </div>
 
-
-            {/* <div>
-                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-                    <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    <Marker position={[51.505, -0.09]}>
-                        <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
-                        </Popup>
-                    </Marker>
-                </MapContainer>
-            </div> */}
 
         </div>
     );

@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className=" flex flex-col justify-center items-center lg:items-start  lg:justify-between  md:pb-10  pb-5 lg:flex-row ">
                     <div className="lg:w-[35%]  lg:flex-1 md:w-[70%]  flex flex-col justify-start  font-primary">
                         <div className=" flex justify-center ">
-                            <img className="lg:w-[60%] md:w-[35%] w-[50%] " src="https://i.ibb.co/hRBXMRc/image.png" alt="" />
+                            <img className="lg:w-[50%] md:w-[35%] w-[50%] " src="https://i.ibb.co/hRBXMRc/image.png" alt="" />
                         </div>
 
                         <p className="text-center mt-3">

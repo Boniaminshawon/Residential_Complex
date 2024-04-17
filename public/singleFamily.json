@@ -1,0 +1,119 @@
+[
+    {
+        "id": "1",
+        "image": "https://i.ibb.co/gmcgw6Y/3031-1.jpg",
+        "estate_title": "Modern Family Home in Suburbia",
+        "location": "Suburbia City, XYZ",
+        "area": "1500 sq ft",
+        "facilities": [
+            "Backyard garden",
+            "Garage",
+            "Spacious living room"
+        ],
+        "short_description": "Beautiful modern home located in the peaceful suburbs. Perfect for families with children and senior member.",
+        "price": "$350,000",
+        "city": "Suburbia City"
+    },
+    {
+        "id": "2",
+        "image": "https://i.ibb.co/162hPQV/dd8f2939-c346-4cb0-a40a-bf3b7744994d.jpg",
+        "estate_title": "Cozy Countryside Retreat",
+        "location": "Rural Village, ABC",
+        "area": "2000 sq ft",
+        "facilities": [
+            "Large front porch",
+            "Fireplace",
+            "Scenic views"
+        ],
+        "short_description": "Charming countryside home nestled in a serene village. Ideal for those seeking peace and tranquility.",
+        "price": "$280,000",
+        "city": "Riverside City"
+    },
+    {
+        "id": "3",
+        "image": "https://i.ibb.co/18LXPZY/16.jpg",
+        "estate_title": "Luxurious Villa with Ocean View",
+        "location": "Beachfront, DEF",
+        "area": "5000 sq ft",
+        "facilities": [
+            "Infinity pool",
+            "Private beach access",
+            "Home theater"
+        ],
+        "short_description": "Exquisite villa offering stunning ocean views and luxurious amenities. A dream home for those who love the beach lifestyle.",
+        "price": "$1,200,000",
+        "city": "Historic Town"
+    },
+    {
+        "id": "4",
+        "image": "https://i.ibb.co/zFqZbVV/57-Wyckoff-Street-rear-exterior.webp",
+        "estate_title": "Modern Townhouse in Downtown",
+        "location": "Downtown District, PQR",
+        "area": "3000 sq ft",
+        "facilities": [
+            "Rooftop terrace",
+            "Attached garage",
+            "Open-concept living area"
+        ],
+        "short_description": "Stylish townhouse located in the heart of downtown. Close to amenities and vibrant city life.",
+        "price": "$500,000",
+        "city": "Metropolis"
+    },
+    {
+        "id": "5",
+        "image": "https://i.ibb.co/ckzmdKF/ed8c1044.jpg",
+        "estate_title": "Charming Townhouse ",
+        "location": "Historic District, LMN",
+        "area": "2500 sq ft",
+        "facilities": [
+            "Historic charm",
+            "Private courtyard",
+            "Modern upgrades"
+        ],
+        "short_description": "Beautiful townhouse nestled in the historic district. Combines classic architecture with modern comforts.",
+        "price": "$400,000",
+        "city": "Old Town"
+    },
+    {
+        "id": "6",
+        "image": "https://i.ibb.co/SskNPK8/8d568b41526151-57a9ca21012e8.jpg",
+        "estate_title": "Luxury Apartment in High-rise Tower",
+        "location": "City Center, JKL",
+        "area": "1500 sq ft",
+        "facilities": [
+            "24/7 security",
+            "Fitness center",
+            "Balcony with city views"
+        ],
+        "short_description": "Stunning luxury apartment situated in a prestigious high-rise tower in the heart of the city center. Offers unparalleled views and amenities.",
+        "price": "$700,000"
+    },
+    {
+        "id": "7",
+        "image": "https://i.ibb.co/ygcHgQc/457802030.jpg",
+        "estate_title": "Spacious Apartment with River View",
+        "location": "Waterfront District, UVW",
+        "area": "1800 sq ft",
+        "facilities": [
+            "River-facing balcony",
+            "Parking garage",
+            "On-site maintenance"
+        ],
+        "short_description": "Beautiful and spacious apartment overlooking the river, located in the vibrant waterfront district. Perfect for urban living.",
+        "price": "$600,000"
+    },
+    {
+        "id": "8",
+        "image": "https://i.ibb.co/PxDWzfR/901-vine-st-west-hollywood-ca-3br-2ba-loft-den-unit-406-1541sf.jpg",
+        "estate_title": "Modern Loft Apartment in Artsy Neighborhood",
+        "location": "Art District, OPQ",
+        "area": "1200 sq ft",
+        "facilities": [
+            "Open loft design",
+            "Exposed brick walls",
+            "Art studio space"
+        ],
+        "short_description": "Contemporary loft-style apartment located in the vibrant and creative art district. Perfect for artists and those who appreciate modern design.",
+        "price": "$450,000"
+    }
+]
