@@ -45,7 +45,7 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
-                swal("Wow!", "Registered successfully!", "success");
+                swal("Wow!", "Registered successfully! You have to login now ", "success");
                 const user = result.user;
 
                 updateUserProfile(name, image)

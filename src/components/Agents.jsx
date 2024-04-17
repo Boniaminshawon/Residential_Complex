@@ -10,7 +10,7 @@ const Agents = () => {
             <div className="flex flex-col md:flex-row gap-4">
 
 
-                <div className="text-center flex-1 p-6 transition hover:scale-105 shadow-lg">
+                <div className="text-center flex-1 p-6 transition  hover:scale-105 shadow-lg">
                     <div className="flex justify-center">
                         <img className="rounded-full" src="https://i.ibb.co/N3ZsrHt/images-8.jpg" alt="" />
                     </div>
