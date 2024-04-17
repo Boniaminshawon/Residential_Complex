@@ -63,8 +63,41 @@ const Banner = () => {
 
             </SwiperSlide>
 
+            <SwiperSlide
+                style={{ backgroundImage: 'url("https://i.ibb.co/ryKGSng/maxresdefault-2.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
+
+                <div className='md:pr-10 mb-5 md:mb-0 justify-center md:items-center items-end h-full w-full flex md:justify-end'>
+                    <div className=' bg-[#004274] text-start text-white  h-[165px p-2  md:p-6 w-[380px]'>
+                        <div className='flex justify-between'>
+                            <p className='font-bold md:text-xl text-lg font-primary'> Pinecrest Retirement Village</p>
+                            <p className=''>$3,500/month</p>
+                        </div>
+                        <p className='text-sm my-2'> 1222 Twilight Boulevard, Hillcrest Hills, Summitview</p>
+                        <p className='text-base '>1,500 sq ft</p>
+                        <button className='bg-[#00aeff] hover:bg-[#004274] rounded-md px-3 py-1 md:mt-5 mt-3'>View Details</button>
+                    </div>
+                </div>
+            </SwiperSlide>
 
 
+
+            <SwiperSlide
+
+                style={{ backgroundImage: 'url("https://i.ibb.co/6HYpBNf/atkinson-01.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
+
+                <div className='md:pr-10 mb-5 md:mb-0 justify-center md:items-center items-end h-full w-full flex md:justify-end'>
+                    <div className=' bg-[#004274] text-start text-white  h-[160px p-2  md:p-6 w-[380px]'>
+                        <div className='flex justify-between'>
+                            <p className='font-bold text-xl font-primary'>Harborview Townhomes </p>
+                            <p className=''>$3,500/month</p>
+                        </div>
+                        <p className='text-sm my-2'> 456 Tranquil Avenue, Lakeside Heights, Harborview
+                        </p>
+                        <p className='text-base '>1,800 sq ft</p>
+                        <button className='bg-[#00aeff] hover:bg-[#004274] rounded-md px-3 py-1 md:mt-5 mt-3'>View Details</button>
+                    </div>
+                </div>
+            </SwiperSlide>
             <SwiperSlide
                 style={{ backgroundImage: 'url("https://i.ibb.co/mGJxkgX/vacation-rental-websites-1550853606.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
 
@@ -82,25 +115,6 @@ const Banner = () => {
                     </div>
                 </div>
             </SwiperSlide>
-
-            <SwiperSlide
-          
-                style={{ backgroundImage: 'url("https://i.ibb.co/6HYpBNf/atkinson-01.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
-
-                <div className='md:pr-10 mb-5 md:mb-0 justify-center md:items-center items-end h-full w-full flex md:justify-end'>
-                    <div className=' bg-[#004274] text-start text-white  h-[160px p-2  md:p-6 w-[380px]'>
-                        <div className='flex justify-between'>
-                            <p className='font-bold text-xl font-primary'>Harborview Townhomes </p>
-                            <p className=''>$3,500/month</p>
-                        </div>
-                        <p className='text-sm my-2'> 456 Tranquil Avenue, Lakeside Heights, Harborview
-                        </p>
-                        <p className='text-base '>1,800 sq ft</p>
-                        <button className='bg-[#00aeff] hover:bg-[#004274] rounded-md px-3 py-1 md:mt-5 mt-3'>View Details</button>
-                    </div>
-                </div>
-            </SwiperSlide>
-
             <SwiperSlide
                 style={{ backgroundImage: 'url("https://i.ibb.co/dPYqYfN/Cadence20-Urban20-Trails-Aerial203-2.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
 
@@ -135,21 +149,7 @@ const Banner = () => {
                 </div>
             </SwiperSlide>
 
-            <SwiperSlide
-                style={{ backgroundImage: 'url("https://i.ibb.co/ryKGSng/maxresdefault-2.jpg")', backgroundPosition: 'center', backgroundSize: 'cover', height: '520px' }}>
 
-                <div className='md:pr-10 mb-5 md:mb-0 justify-center md:items-center items-end h-full w-full flex md:justify-end'>
-                    <div className=' bg-[#004274] text-start text-white  h-[165px p-2  md:p-6 w-[380px]'>
-                        <div className='flex justify-between'>
-                            <p className='font-bold md:text-xl text-lg font-primary'> Pinecrest Retirement Village</p>
-                            <p className=''>$3,500/month</p>
-                        </div>
-                        <p className='text-sm my-2'> 1222 Twilight Boulevard, Hillcrest Hills, Summitview</p>
-                        <p className='text-base '>1,500 sq ft</p>
-                        <button className='bg-[#00aeff] hover:bg-[#004274] rounded-md px-3 py-1 md:mt-5 mt-3'>View Details</button>
-                    </div>
-                </div>
-            </SwiperSlide>
 
 
         </Swiper>
