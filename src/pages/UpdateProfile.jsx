@@ -11,8 +11,7 @@ const UpdateProfile = () => {
 
         updateUserProfile(name, image)
             .then(() => {
-                setUser({ ...user, displayName: name, photoURL: image })
-                console.log(user);
+                setUser({ ...user, displayName: name, photoURL: image });
             })
     }
     return (
@@ -44,13 +43,13 @@ const UpdateProfile = () => {
                                     <label className="label">
                                         <span className="label-text font-medium text-xl">Your Email</span>
                                     </label>
-                                    <input type="email" value={user.email} className="input input-bordered text-[#00aeff]  font-semibold" />
+                                    <input readOnly type="email" value={user.email||'Email not found'} className="input input-bordered text-[#00aeff]  font-semibold" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text font-medium text-xl">Photo url</span>
                                     </label>
-                                    <input type="text" name="photo" defaultValue={user?.photoURL || "https://i.ibb.co/L1kVMdW/images-removebg-preview.png"} className="font-semibold input input-bordered" />
+                                    <input type="text" name="photo" defaultValue={user.photoURL || "https://i.ibb.co/L1kVMdW/images-removebg-preview.png"} className="font-semibold input input-bordered" />
                                 </div>
 
 

@@ -60,7 +60,7 @@ const Register = () => {
                     if (user) {
                         navigate('/login')
                     }
-                }, 3000);
+                }, 2000);
             })
       
             .catch(error => {
@@ -115,7 +115,7 @@ const Register = () => {
                                     <span className="label-text text-lg font-medium">Photo</span>
                                 </label>
                                 <input type="text"  placeholder="Photo URL" className="input input-bordered"
-                                    {...register("photo", { required: true })}
+                                    {...register("image", { required: true })}
                                 />
                                 {errors.password && <span className="text-red-500 mt-2 text-lg">This field is required</span>}
 

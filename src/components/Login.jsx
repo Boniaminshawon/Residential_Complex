@@ -6,9 +6,6 @@ import SocialLogin from "./SocialLogin";
 import { useState } from "react"
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
 import { Helmet } from "react-helmet-async";
-import 'animate.css';
-// import swal from 'sweetalert';
-
 
 const Login = () => {
     const { signIn } = UseAuth();
@@ -16,9 +13,6 @@ const Login = () => {
     const [loginError, setLoginError] = useState('');
     const navigate = useNavigate();
     const location = useLocation();
-
-
-
 
     const {
         register,
@@ -35,17 +29,12 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
 
-
-
                 if (user) {
                     navigate(location?.state || '/')
                 }
             })
 
-
-
             .catch(error => {
-                // swal("Oops!", "Your email already have used!", "error");
                 console.log(error);
                 setLoginError(error)
             });
@@ -64,18 +53,18 @@ const Login = () => {
                 <div className="hero-content flex-col ">
                     <h2 className="font-primary font-medium md:text-2xl text-xl mb-7 text-center animate-pulse">If you don't have any account. Please <Link className="underline text-[#00aeff] font-semibold text-2xl" to={'/register'}>Register</Link> first, or use social login.</h2>
                     <div className="card shrink-0 p-0 w-full lg:w-[450px] shadow-2xl bg-base-100">
-                        
+
                         <div className="text-center ">
                             <h1 className="md:text-4xl text-[28px] mt-5 font-bold">Login now!</h1>
                             {
-                            loginError && <div className=" border-2 animate__animated animate__backInDown mx-6 mt-6 bg-[#ffebe8] py-3 border-[#dd3c10] rounded text-center">
-                                <h1 className="md:text-xl text-lg font-semibold">Wrong credentials</h1>
-                                <p className="md:text-lg text-base font-medium">Invalid email or password</p>
+                                loginError && <div className=" border-2 animate__animated animate__backInDown mx-6 mt-6 bg-[#ffebe8] py-3 border-[#dd3c10] rounded text-center">
+                                    <h1 className="md:text-xl text-lg font-semibold">Wrong credentials</h1>
+                                    <p className="md:text-lg text-base font-medium">Invalid email or password</p>
 
-                            </div>
-                        }
+                                </div>
+                            }
                         </div>
-                    
+
                         <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                             <div className="form-control">
                                 <label className="label">
@@ -99,9 +88,6 @@ const Login = () => {
                                     }
 
                                 </span>
-
-
-
                                 {errors.password && <span className="text-red-500 mt-2 text-lg">This field is required</span>}
                             </div>
 
@@ -121,8 +107,6 @@ const Login = () => {
                 </div>
             </div>
         </div>
-
-
     );
 };
 

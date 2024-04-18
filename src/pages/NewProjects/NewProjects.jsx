@@ -30,13 +30,11 @@ const NewProjects = () => {
                 </div>
             </div>
 
-            <div className="space-y-10 mt-5">
+            <div className="md:space-y-20 lg:space-y-24 space-y-10 mt-5">
                 <LuxuriousApartment newProjects={newProjects}></LuxuriousApartment>
-                <h1 className=" bg-[#609dcb bg-[#004274]   rounded md:py-6 py-2"> </h1>
-
-
+            
                 <TownHall newProjects={newProjects}></TownHall>
-                <h1 className=" bg-[#609dcb bg-[#004274]   rounded md:py-6 py-2"> </h1>
+              
                 <Apartments newProjects={newProjects}></Apartments>
             </div>
 

@@ -5,7 +5,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 import ModalCall from "./ModalCall";
 import ModalEmail from "./ModalEmail";
-
+import PropTypes from 'prop-types';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -18,7 +18,7 @@ const Property = ({ property }) => {
     return (
         <div>
            
-            <div data-aos-duration="1600" data-aos="zoom-in-down" className=" border rounded-lg md:p-4 p-[10px] shadow-md">
+            <div data-aos-duration="1500" data-aos="zoom-in-up" className=" border rounded-lg md:p-4 p-[10px] shadow-md">
 
                 <div className="md:space-y-4 space-y-3">
                     <div className="space-y-2 ">
@@ -58,3 +58,6 @@ const Property = ({ property }) => {
 };
 
 export default Property;
+Property.propTypes = {
+    property: PropTypes.node
+}

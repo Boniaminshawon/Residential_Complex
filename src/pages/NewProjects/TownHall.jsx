@@ -5,6 +5,7 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import PropTypes from 'prop-types';
 
 const TownHall = ({ newProjects }) => {
     AOS.init();
@@ -19,10 +20,12 @@ const TownHall = ({ newProjects }) => {
             <p className="text-center md:text-[20px] text-base lg:px-20 px-3 font-primary my-6 ">
             Discover the charm and convenience of town hall residential living in our vibrant community. Experience the perfect blend of historic elegance and modern comfort in our thoughtfully restored homes. Located within walking distance of bustling town centers, each residence offers easy access to shops, dining, and cultural attractions. Immerse yourself in the rich tapestry of community events and local festivities, fostering a sense of belonging and camaraderie. With a variety of housing options to suit every lifestyle, town hall residential living promises a unique and enriching experience for residents of all ages.
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
 
 
-                <div  data-aos-duration="1600"  data-aos="fade-up-right" className="p-4 border shadow-lg rounded ">
+                <div
+                  data-aos-duration="1500"  data-aos="zoom-in-up"
+                   className="p-4 border shadow-lg rounded ">
                     <img src={newProjects[3].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[3].estate_title}</h3>
 
@@ -44,7 +47,9 @@ const TownHall = ({ newProjects }) => {
                     </div>
                 </div>
 
-                <div data-aos-duration="1600"  data-aos="fade-up-left" className="p-4 border shadow-lg rounded ">
+                <div
+                 data-aos-duration="1500"  data-aos="zoom-in-up"
+                  className="p-4 border shadow-lg rounded ">
                     <img src={newProjects[4].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[4].estate_title}</h3>
 
@@ -65,14 +70,12 @@ const TownHall = ({ newProjects }) => {
                         <button onClick={() => document.getElementById('my_modal_5').showModal()} className="flex items-center gap-2 text-green-700 bg-[#e5eff0] hover:text-red-500 px-4 rounded-md py-1"><MdOutlineMarkEmailUnread></MdOutlineMarkEmailUnread>Email</button>
                     </div>
                 </div>
-               
-
-
             </div>
-
-
         </div>
     );
 };
 
 export default TownHall;
+TownHall.propTypes = {
+    newProjects: PropTypes.node
+}

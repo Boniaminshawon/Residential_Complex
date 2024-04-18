@@ -3,7 +3,7 @@
         "id": "1",
         "image": "https://i.ibb.co/gmcgw6Y/3031-1.jpg",
         "estate_title": "Modern Family Home in Suburbia",
-        "location": "Suburbia City, XYZ",
+        "location": "Suburbia City, Sydney",
         "area": "1500 sq ft",
         "facilities": [
             "Backyard garden",
@@ -18,7 +18,7 @@
         "id": "2",
         "image": "https://i.ibb.co/162hPQV/dd8f2939-c346-4cb0-a40a-bf3b7744994d.jpg",
         "estate_title": "Cozy Countryside Retreat villa",
-        "location": "Rural Village, ABC",
+        "location": "Rural Village, India ",
         "area": "2000 sq ft",
         "facilities": [
             "Large front porch",
@@ -33,7 +33,7 @@
         "id": "3",
         "image": "https://i.ibb.co/18LXPZY/16.jpg",
         "estate_title": "Luxurious Villa with Ocean View",
-        "location": "Beachfront, DEF",
+        "location": "Beachfront, Cox's Bazar",
         "area": "5000 sq ft",
         "facilities": [
             "Infinity pool",
@@ -48,7 +48,7 @@
         "id": "4",
         "image": "https://i.ibb.co/zFqZbVV/57-Wyckoff-Street-rear-exterior.webp",
         "estate_title": "Modern Townhouse in Downtown",
-        "location": "Downtown District, PQR",
+        "location": "Downtown District, USA",
         "area": "3000 sq ft",
         "facilities": [
             "Rooftop terrace",
@@ -63,7 +63,7 @@
         "id": "5",
         "image": "https://i.ibb.co/ckzmdKF/ed8c1044.jpg",
         "estate_title": "Charming Townhouse in Historic ",
-        "location": "Historic District, LMN",
+        "location": "Historic District, Dallas",
         "area": "2500 sq ft",
         "facilities": [
             "Historic charm",
@@ -78,7 +78,7 @@
         "id": "6",
         "image": "https://i.ibb.co/SskNPK8/8d568b41526151-57a9ca21012e8.jpg",
         "estate_title": "Luxury Apartment in High-rise Tower",
-        "location": "City Center, JKL",
+        "location": "City Center,Canada",
         "area": "1500 sq ft",
         "facilities": [
             "24/7 security",
@@ -92,7 +92,7 @@
         "id": "7",
         "image": "https://i.ibb.co/ygcHgQc/457802030.jpg",
         "estate_title": "Spacious Apartment with River View",
-        "location": "Waterfront District, UVW",
+        "location": "Waterfront District, Ontario",
         "area": "1800 sq ft",
         "facilities": [
             "River-facing balcony",
@@ -106,7 +106,7 @@
         "id": "8",
         "image": "https://i.ibb.co/PxDWzfR/901-vine-st-west-hollywood-ca-3br-2ba-loft-den-unit-406-1541sf.jpg",
         "estate_title": "Modern Loft Apartment in Artsy Neighborhood",
-        "location": "Art District, OPQ",
+        "location": "Art District, Miami",
         "area": "1200 sq ft",
         "facilities": [
             "Open loft design",

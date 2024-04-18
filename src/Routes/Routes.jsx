@@ -57,7 +57,7 @@ const router = createBrowserRouter([
             {
                 path: '/projects',
                 element: <PrivateRoute><NewProjects></NewProjects></PrivateRoute>,
-                loader: () => fetch('singleFamily.json')
+                loader: () => fetch('/newProject.json')
             }
 
         ]

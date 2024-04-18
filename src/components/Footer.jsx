@@ -1,12 +1,8 @@
 
-
 const Footer = () => {
     return (
         <div>
-          
-
             <footer className="lg:px-16 py-7 md:pt-16 md:pb-10 text-white bg-[#00335a]  mt-5 md:mt-11">
-
 
                 <div className=" flex flex-col justify-center items-center lg:items-start  lg:justify-between  md:pb-10  pb-5 lg:flex-row ">
                     <div className="lg:w-[35%]  lg:flex-1 md:w-[70%]  flex flex-col justify-start  font-primary">
@@ -72,7 +68,6 @@ const Footer = () => {
                 <div className="border border-white mb-4 md:mb-7"></div>
                 <div className="text-center font-primary"> <i className="font-semibold md:text-2xl text-lg text-[#ffffcc] ">Copyright © 2024 - All right reserved</i></div>
             </footer>
-
         </div>
     );
 };

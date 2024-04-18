@@ -5,6 +5,7 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import PropTypes from 'prop-types';
 
 
 
@@ -22,10 +23,12 @@ const Apartments = ({ newProjects }) => {
             <p className="text-center md:text-[20px] text-base lg:px-20 px-3 font-primary my-6 ">
              Experience the warmth and comfort of single-family residential living in our charming homes. Nestled in serene neighborhoods, each residence offers a haven of tranquility and privacy. Enjoy the spaciousness and flexibility of your own yard, perfect for outdoor gatherings or quiet relaxation. With thoughtfully designed interiors and modern amenities, our single-family homes provide the ideal backdrop for creating lasting memories with loved ones. Embrace the sense of community and belonging that comes with living in a residential neighborhood, where neighbors become friends and every street feels like home.
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
 
 
-                <div data-aos-duration="1600"  data-aos="fade-up-right" className="p-4 border shadow-lg rounded ">
+                <div
+                 data-aos-duration="1500"  data-aos="zoom-in-up"
+                  className="p-4 border shadow-lg rounded ">
                     <img src={newProjects[0].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[0].estate_title}</h3>
 
@@ -47,7 +50,9 @@ const Apartments = ({ newProjects }) => {
                     </div>
                 </div>
 
-                <div data-aos-duration="2000" data-aos="zoom-in-up" className="p-4 border shadow-lg rounded ">
+                <div 
+                data-aos-duration="1500" data-aos="zoom-in-up" 
+                className="p-4 border shadow-lg rounded ">
                     <img src={newProjects[1].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[1].estate_title}</h3>
 
@@ -69,7 +74,9 @@ const Apartments = ({ newProjects }) => {
                     </div>
                 </div>
 
-                <div data-aos-duration="1600"  data-aos="fade-up-left" className="p-4 border shadow-lg rounded ">
+                <div
+                 data-aos-duration="1500"  data-aos="zoom-in-up" 
+                 className="p-4 border shadow-lg rounded ">
                     <img src={newProjects[2].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] mt-2 text-[20px] text-start font-primary font-bold ">{newProjects[2].estate_title}</h3>
 
@@ -98,3 +105,6 @@ const Apartments = ({ newProjects }) => {
 };
 
 export default Apartments;
+Apartments.propTypes = {
+    newProjects: PropTypes.node
+}

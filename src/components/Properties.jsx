@@ -1,4 +1,5 @@
 import Property from "./Property";
+import PropTypes from 'prop-types';
 
 
 
@@ -20,3 +21,6 @@ const Properties = ({ properties }) => {
 };
 
 export default Properties;
+Properties.propTypes = {
+    properties: PropTypes.node
+}

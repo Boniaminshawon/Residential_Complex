@@ -17,7 +17,7 @@ const Home = () => {
             <Banner></Banner>
             <Properties properties={properties}></Properties>
             <Agents></Agents>
-            <div className="hidden md:block"><Testimonials></Testimonials></div>
+            <div className=""><Testimonials></Testimonials></div>
 
         </div>
     );
