@@ -1,6 +1,6 @@
 # Residential Complex
 
-## Website Live link: https://residential-complex-7bc02.web.app
+## - [Website Live link:](https://residential-complex-7bc02.web.app)
 
 ## Features and Characteristics of this website:
 
@@ -16,7 +16,7 @@
 
 
 
-# npm package name:
+# Used npm package :
 
 1. AOS Package,
 2. Animate.css,
