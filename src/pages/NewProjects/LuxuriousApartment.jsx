@@ -22,7 +22,7 @@ const LuxuriousApartment = ({ newProjects }) => {
 
 
                 <div
-                 data-aos-duration="1500"  data-aos="zoom-in-up" 
+                 data-aos-duration="1400"  data-aos="zoom-in-up" 
                    className="  p-4 border shadow-lg rounded ">
                     <img src={newProjects[5].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[5].estate_title}</h3>
@@ -46,7 +46,7 @@ const LuxuriousApartment = ({ newProjects }) => {
                 </div>
 
                 <div
-                 data-aos-duration="1500" data-aos="zoom-in-up" 
+                 data-aos-duration="1400" data-aos="zoom-in-up" 
                  className="  p-4 border shadow-lg rounded ">
                     <img src={newProjects[6].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[6].estate_title}</h3>
@@ -70,7 +70,7 @@ const LuxuriousApartment = ({ newProjects }) => {
                 </div>
 
                 <div 
-                data-aos-duration="1500"  data-aos="zoom-in-up" 
+                data-aos-duration="1400"  data-aos="zoom-in-up" 
                 className=" p-4 border shadow-lg rounded ">
                     <img src={newProjects[7].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] mt-2 text-[20px] text-start font-primary font-bold ">{newProjects[7].estate_title}</h3>

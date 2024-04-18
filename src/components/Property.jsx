@@ -18,7 +18,7 @@ const Property = ({ property }) => {
     return (
         <div>
            
-            <div data-aos-duration="1500" data-aos="zoom-in-up" className=" border rounded-lg md:p-4 p-[10px] shadow-md">
+            <div data-aos-duration="1400" data-aos="zoom-in-up" className=" border rounded-lg md:p-4 p-[10px] shadow-md">
 
                 <div className="md:space-y-4 space-y-3">
                     <div className="space-y-2 ">

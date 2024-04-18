@@ -24,7 +24,7 @@ const TownHall = ({ newProjects }) => {
 
 
                 <div
-                  data-aos-duration="1500"  data-aos="zoom-in-up"
+                  data-aos-duration="1400"  data-aos="zoom-in-up"
                    className="p-4 border shadow-lg rounded ">
                     <img src={newProjects[3].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[3].estate_title}</h3>
@@ -48,7 +48,7 @@ const TownHall = ({ newProjects }) => {
                 </div>
 
                 <div
-                 data-aos-duration="1500"  data-aos="zoom-in-up"
+                 data-aos-duration="1400"  data-aos="zoom-in-up"
                   className="p-4 border shadow-lg rounded ">
                     <img src={newProjects[4].image} alt="" className="block object-cover object-center w-full rounded-md md:h-64 h-[200px] " />
                     <h3 className="md:text-[24px] text-[20px]  mt-2 text-start font-primary font-bold ">{newProjects[4].estate_title}</h3>
